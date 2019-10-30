@@ -1,0 +1,22 @@
+.listeMenu{
+    background-color: #000;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.listeMenu li{
+    display: inline;
+}
+.listeMenu a{
+    color: #fff;
+    padding-right: 15px;
+}
+/*@media screen and (max-width: 768px) {
+    .listeMenu li{
+        display: block;
+    }
+    .listeMenu{
+        text-align: left;
+        padding-left: 15px;
+    }
+}*/

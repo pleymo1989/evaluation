@@ -1,0 +1,39 @@
+section.sectionTable{
+    width:100%;
+}
+table, tr, th {
+    border-style: solid;
+    border-width: 1px;
+    border-color:  grey;
+    margin-top: 1em;
+    vertical-align: top;
+    border-collapse: collapse;
+ }
+table {
+    margin-top: 1em;
+    width: 100%;
+}
+thead {
+    font-weight: bold;
+}
+td {
+    border: solid 1px grey;
+    border-collapse: collapse;
+    padding-top: 1%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.Photos{
+    width: 35%;
+}
+.ID{
+    width: 7%;
+}
+.Cat .Label .Prix .Couleur{
+    width: 14%;
+}
+td.Label{ 
+        color: #69f;
+}
+.photoProd { /* pour les images de la première colonne du tableau */
+    width: 150px;
+}

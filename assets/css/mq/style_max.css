@@ -1,0 +1,173 @@
+/* Tout le contenu */
+* {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-variant-ligatures: common-ligatures;
+    font-size: 11pt;
+}
+/* Entête */
+/* Image entête */
+.Logo {
+    width: 100%;
+}
+.Logo img{
+    width: 25%;
+    margin-right: 25%;
+}
+.Logo figcaption{         /* Permet de conserver la sémantique et de placer la légende sur la ligne de l'image */
+    display: inline;
+    font-size: 24pt;
+    vertical-align: 100%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+/* Image pub */
+.Pub{
+    width: 100%;
+}
+/* Fin image pub */
+/* Fin image entête */
+
+/* menu */
+.listeMenu {
+    background-color: #000;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.listeMenu li{
+    display: inline;
+}
+.listeMenu a{
+    color: #fff;
+    padding-right: 15px;
+}
+/* fin menu */
+    
+/* Corps de texte */
+main{
+    width: 100%;
+}
+.blocTexte{
+    display: table-cell;
+    width: 72%;
+    margin-right: 3%;
+}
+aside{
+    display: table-cell;
+    vertical-align: top;
+    width: 25%;
+    background-color: #ccc;
+    color:#000;
+}
+hr {
+    border-color: #ecececcc;
+    width: 95%;
+}
+h1 {
+    font-size: 18pt;
+    font-weight: bold;
+}
+h2 {
+    font-size: 14pt;
+}
+/* fin corps de texte */
+
+/* formulaire */
+form, form:before{
+    text-align:center;
+} /* aligne en centré le formulaire et le p précédent (form:before) */
+fieldset{
+    display: inline-block;
+    width: 35em;
+    text-align: left;
+    border-style: solid;
+    border-color: #9c9c9c;
+}
+label{
+    display: inline-block;   
+    width: 15em;
+}
+input{ 
+    margin-bottom: 1em;
+}
+input[type="text"], input[type="date"], select, textarea{ 
+    width: 15em;
+}
+input[type="checkbox"]{
+    display: inline-block;
+    margin-top: 0.5em;
+}
+select{
+    margin-bottom: 1em;
+}
+textarea{
+    vertical-align: top;
+    height: 5em;
+}
+button{
+    margin-left: 1.5em;
+    margin-right: 1.5em;
+}
+/* fin formulaire */
+
+/* Tableaux */
+section.sectionTable{
+    width:100%;
+}
+table, tr, th {
+    border-style: solid;
+    border-width: 1px;
+    border-color:  grey;
+    margin-top: 1em;
+    vertical-align: top;
+    border-collapse: collapse;
+ }
+table {
+    margin-top: 1em;
+    width: 100%;
+}
+thead {
+    font-weight: bold;
+}
+td {
+    border: solid 1px grey;
+    border-collapse: collapse;
+    padding-top: 1%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.Photos{
+    width: 35%;
+}
+.ID{
+    width: 7%;
+}
+.Cat .Label .Prix .Couleur{
+    width: 14%;
+}
+td.Label{ 
+        color: #69f;
+}
+.photoProd { /* pour les images de la première colonne du tableau */
+    width: 150px;
+}
+/* Fin tableau */
+
+/* Erreur 404 */
+#err404{
+    text-align: center
+    max-height: 100%;
+}
+
+#err404 h1{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 24pt;
+    color: #f66;
+    font-weight: bolder;
+    margin-bottom: 0.1em;
+}
+
+#err404 img{
+    max-width: 400px;
+    margin: 0;
+
+}
+/* Fin erreur 404 */

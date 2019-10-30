@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="fr-FR">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport"
+              content="width=device-width, initial-scal=1, shrink-to-fit=no">
+        <title>Bienvenue chez Jarditou</title>
+        <!--
+            Utilisation de plusieurs balises link au lieu de la directive @import de css
+            car j'avoue ne pas savoir l'utiliser
+             TOUJOURS IMPORTER LES CSS DU FRAMEWORK EN PREMIER
+        -->
+           
+        <link href="assets/css/bootstrap/bootstrap.min.css" rel="stylesheet">
+        <!-- les css de bootstrap au cas ou-->
+        <link href="assets/css/main.css" rel="stylesheet">
+        <!--<link href="assets/css/top.css" rel="stylesheet">-->
+        <link href="assets/css/menu.css" rel="stylesheet">
+        <!-- Mettre en place après la mise en page bootstrap :
+            mise en page mode dégradé à base de media queries si les scripts ne sont pas pris en charge
+        <noscript>
+            <link rel="stylesheet" href="assets/css/mq/main.css">
+            <link rel="stylesheet" href="assets/css/mq/top.css">
+            <link rel="stylesheet" href="assets/css/mq/menu.css">
+        </noscript> -->
+    </head>
+    <body>
+        <div class="container-fluid">
+            <header>
+                <!-- Bandeau Logo + légende -->
+                <figure class="Logo row align-items-center">
+                    <img src="assets/img/jarditou_logo.jpg" alt="logo Jarditou" class="col-6 img-fluid"
+                         srcset="assets/img/jarditou_logo_50.jpg 640w,
+                                 assets/img/jarditou_logo_25.jpg 320w">
+                    <figcaption class="col-6 h1">Tout le jardin</figcaption>
+                </figure>
+                <!-- navbar pour le menu burger -->
+                <nav id="navbarHaut" class="navbar navbar-expand-md bg-dark navbar-dark">
+                    <!-- bouton burger -->
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#burgerHaut">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <!-- Contenu du menu -->
+                    <div class="collapse navbar-collapse" id="burgerHaut">
+                        <ul class="navbar-nav listeMenu">
+                            <li class="nav-item">
+                                <a href="index.html" class="text-white">Accueil</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="tableau.html" class="text-white">Tableau</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="contact.html" class="text-white">Contact</a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+                <div class="row Pub">
+                    <img src="assets/img/promotion.jpg" class="Pub img-fluid col" alt="Promotion sur lames de terrasse"
+                    srcset="assets/img/promotion_50.jpg 640w,
+                            assets/img/promotion_25.jpg 320w">
+                </div>
+            </header>
+            <main class="row no-gutters">
+                <div class="blocTexte
+                            col-xs-6 col-sm-6 col-lg-8">
+                <!-- si on fait disparaître le aside, on écrira :
+                <div class="blocTexte
+                            col-12 col-lg-8">
+                    et on modifie le aside
+
+                -->
+                    <h1>Accueil</h1>
+                    <hr>
+                    <section>
+                        <article>
+                            <h2>L'entreprise</h2>
+                            <p>
+                                Notre entreprise familiale met tout son savoir-faire à votre disposition dans le domaine du
+                                jardin et du paysagisme.
+                            </p>
+                            <p>Créée il y a 70 ans, notre entreprise vend fleurs, arbustes, matériel à main et motorisé.</p>
+                            <p>
+                                Implantés à Amiens, nous intervenons dans tout le département de la Somme : Albert,
+                                Doullens, Péronne, Abbeville, Corbie
+                            </p>
+                        </article>
+                    </section>
+                    <section>
+                        <article>
+                            <h2>Qualité</h2>
+                            <p>
+                                Nous mettons à votre disposition un service personnalisé, avec 1 seul interlocuteur durant
+                                tout votre projet.
+                            </p>
+                            <p>Vous serez séduit par notre expertise, nos compétences et notre sérieux.</p>
+                        </article>
+                        <article>
+                            <h2>Devis gratuit</h2>
+                            <p>
+                                Vous pouvez bien sûr contacter pour de plus amples informations ou pour une demande
+                                d’intervention. Vous souhaitez un devis&nbsp;? Nous vous le réalisons gratuitement.
+                            </p>
+                        </article>
+                    </section>
+                </div>
+               <aside class="col-sg-6 col-sm-6 col-lg-4">
+                    [COLONNE DROITE]
+                </aside>
+                <!-- Pour faire disparaître le aside, on utilisera :
+                <aside class="d-none d-lg-block col-lg-4">
+                    [COLONNE DROITE]
+                </aside>
+                 et on modifiera le div-->
+            </main>
+            <footer>
+                <nav id="navbarHaut" class="navbar navbar-expand-sm bg-dark navbar-dark no-gutters">
+                    <!-- bouton que isabel apelle burger -->
+                    <!-- <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#burgerBas">
+                        <span class="navbar-toggler-icon"></span>
+                    </button> -->
+                    <!-- Contenu du menu -->
+                    <div id="burgerBas">
+                        <ul class="navbar-nav listeMenu">    
+                            <li><a href="legal.html" class="text-white">Mention légales</a></li>
+                            <li><a href="horaires.html" class="text-white">Horaires</a></li>
+                            <li><a href="plan.html" class="text-white">Plan du site</a></li>
+                        </ul>
+                    </div>
+                </nav>
+            </footer>
+        </div>
+        <!-- Ne plus ajouter de HTML autre que des scripts au-delà de ce commentaire -->
+        <script src="assets/js/jquery-3.3.1.slim.min.js"></script>
+        <script src="assets/js/popper.1.14.7.min.js"></script>
+        <script src="assets/js/bootstrap/bootstrap.min.js"></script>
+      
+        <!-- Ajouter les js persos à partir d'ici -->
+        <script src="..js/vivejava.js"></script>
+    </body>
+</hr>

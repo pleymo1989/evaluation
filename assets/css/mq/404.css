@@ -1,0 +1,18 @@
+#err404{
+    text-align: center;
+    max-height: 100%;
+}
+
+#err404 h1{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 24pt;
+    color: #f66;
+    font-weight: bolder;
+    margin-bottom: 0.1em;
+}
+
+#err404 img{
+    max-width: 400px;
+    margin: 0;
+
+}
